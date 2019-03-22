@@ -9,8 +9,8 @@
 
 <body>
   <form class="formulaire" action="traitement1.php" method="post">
-    <fieldset>
-      <legend>Partie 1</legend>
+    <fieldset class="fieldset1">
+      <legend class="legend">Partie 1</legend>
       <ul>
         <li><label for="Civilité">Civilité : </label><select class="Liste deroulante" name="Civilité" id="Civilité">
             <option value="Madame">Madame</option>
@@ -29,8 +29,8 @@
         <li><label for="Choix d'un MDP">Choix d'un MDP:</label><input type="text" name="Password" value="" id="Choix d'un MDP" required><input type="button" name="Validation" value="Valider"></li>
       </ul>
     </fieldset>
-    <fieldset>
-      <legend>Partie 2</legend>
+    <fieldset class="fieldset2">
+      <legend class="legend">Partie 2</legend>
       <ul>
         <li><label for="Niveau de développeur">Niveau de développeur</label></li>
         <input type="radio" name="Dev level" value="Débutant" id="Niveau de développeur"><label for="Niveau de développeur">Débutant</label>
@@ -60,10 +60,10 @@
           </select></li>
       </ul>
     </fieldset>
-    <fieldset>
-      <legend>Partie 3</legend>
+    <fieldset class="fieldset1">
+      <legend class="legend">Partie 3</legend>
       <ul>
-        <li><label for="start">Date d'entrée en formation</label> <input type="month" name="start" value="MM-AAAA" id="start"> </li>
+        <li><label for="start">Date d'entrée en formation</label> <input class="shortcase" type="number" name="start" value="MM" id="start" min="1" max="12"><input class="shortcase" type="number" name="start" value="AAAA" id="start" min="1950" max="2019"></li>
         <li><label for="Url git">Url github</label> <input type="url" name="Url git" placeholder="https://github.com/examples" id="Urlgit"> </li>
         <p><input type="button" name="ENVOYER" value="ENVOYER"></p>
       </ul>
